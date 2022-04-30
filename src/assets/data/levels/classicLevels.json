@@ -1,0 +1,3996 @@
+[
+  {
+    "id": 1,
+    "name": "The beginning",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": {
+            "y": 2,
+            "x": 3
+          },
+          "element": "Laser",
+          "rotation": 0,
+          "polarization": 0,
+          "frozen": true,
+          "active": true
+        },
+        {
+          "coord": {
+            "y": 2,
+            "x": 9
+          },
+          "element": "Detector",
+          "rotation": 180,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 2,
+            "x": 6
+          },
+          "element": "Rock",
+          "rotation": 0,
+          "frozen": false,
+          "active": true
+        }
+      ]
+    },
+    "hints": [
+      {
+        "coord": {
+          "y": 2,
+          "x": 3
+        },
+        "order": 0
+      },
+      {
+        "coord": {
+          "y": 2,
+          "x": 6
+        },
+        "order": 1
+      },
+      {
+        "coord": {
+          "y": 2,
+          "x": 3
+        },
+        "order": 2
+      }
+    ],
+    "goals": [
+      {
+        "coord": {
+          "y": 2,
+          "x": 9
+        },
+        "threshold": 1
+      }
+    ],
+    "tools": [],
+    "rockTalkId": "first-step"
+  },
+
+  {
+    "id": 2,
+    "name": "Click to Rotate",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": {
+            "y": 2,
+            "x": 3
+          },
+          "element": "Laser",
+          "rotation": 0,
+          "polarization": 0,
+          "frozen": true,
+          "active": true
+        },
+        {
+          "coord": {
+            "y": 1,
+            "x": 6
+          },
+          "element": "Rock",
+          "rotation": 0,
+          "frozen": true,
+          "active": false
+        },
+        {
+          "coord": {
+            "y": 4,
+            "x": 3
+          },
+          "element": "Detector",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 2,
+            "x": 6
+          },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": false,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 6,
+            "x": 9
+          },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": false,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 4,
+            "x": 9
+          },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 6,
+            "x": 6
+          },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 8,
+            "x": 9
+          },
+          "element": "Rock",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "coord": {
+          "y": 2,
+          "x": 6
+        },
+        "order": 0,
+        "action": "rotation"
+      },
+      {
+        "coord": {
+          "y": 6,
+          "x": 9
+        },
+        "order": 1,
+        "action": "rotation"
+      },
+      {
+        "coord": {
+          "y": 2,
+          "x": 3
+        },
+        "order": 2
+      }
+    ],
+    "goals": [
+      {
+        "coord": {
+          "y": 4,
+          "x": 3
+        },
+        "threshold": 1
+      }
+    ],
+    "tools": []
+  },
+
+  {
+    "id": 3,
+    "name": "Drag & Drop",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": {
+            "y": 2,
+            "x": 3
+          },
+          "element": "Laser",
+          "rotation": 0,
+          "polarization": 0,
+          "frozen": true,
+          "active": true
+        },
+        {
+          "coord": {
+            "y": 2,
+            "x": 6
+          },
+          "element": "Rock",
+          "rotation": 0,
+          "frozen": true,
+          "active": false
+        },
+        {
+          "coord": {
+            "y": 2,
+            "x": 9
+          },
+          "element": "Detector",
+          "rotation": 270,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 5,
+            "x": 5
+          },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "coord": {
+          "y": 1,
+          "x": 6
+        },
+        "content": "DRAG & DROP mirrors from the toolbox.",
+        "color": "purple",
+        "rotation": 0,
+        "active": true
+      }
+    ],
+    "goals": [
+      {
+        "coord": {
+          "y": 2,
+          "x": 9
+        },
+        "threshold": 1
+      }
+    ],
+    "tools": ["Mirror", "Mirror"],
+    "rockTalkId": "mirror"
+  },
+
+  {
+    "id": 4,
+    "name": "Divide and Conquer!",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": {
+            "y": 1,
+            "x": 6
+          },
+          "element": "Detector",
+          "rotation": 270,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 1,
+            "x": 4
+          },
+          "element": "Detector",
+          "rotation": 270,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 2
+          },
+          "element": "Detector",
+          "rotation": 360,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 9,
+            "x": 2
+          },
+          "element": "Rock",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 5,
+            "x": 10
+          },
+          "element": "Detector",
+          "rotation": 180,
+          "frozen": true,
+          "active": false,
+          "energized": true
+        },
+        {
+          "coord": {
+            "y": 5,
+            "x": 2
+          },
+          "element": "Laser",
+          "rotation": 0,
+          "frozen": true,
+          "active": true,
+          "energized": true
+        },
+        {
+          "coord": {
+            "y": 7,
+            "x": 8
+          },
+          "element": "Detector",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "coord": {
+          "y": 8,
+          "x": 2
+        },
+        "content": "Use the bottom buttons for STEP BY STEP view",
+        "color": "purple",
+        "rotation": 0,
+        "active": true
+      }
+    ],
+    "goals": [
+      {
+        "coord": {
+          "y": 1,
+          "x": 4
+        },
+        "threshold": 0.125
+      },
+      {
+        "coord": {
+          "y": 1,
+          "x": 6
+        },
+        "threshold": 0.25
+      },
+      {
+        "coord": {
+          "y": 3,
+          "x": 2
+        },
+        "threshold": 0.125
+      },
+      {
+        "coord": {
+          "y": 5,
+          "x": 10
+        },
+        "threshold": 0.25
+      },
+      {
+        "coord": {
+          "y": 7,
+          "x": 8
+        },
+        "threshold": 0.25
+      }
+    ],
+    "tools": ["BeamSplitter", "BeamSplitter", "BeamSplitter", "BeamSplitter"],
+    "rockTalkId": "superposition"
+  },
+
+  {
+    "id": 5,
+    "name": "Not all but everywhere",
+    "group": "Classic",
+    "description": "Error with 90° beamsplitter",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": {
+            "y": 1,
+            "x": 6
+          },
+          "element": "Detector",
+          "rotation": 270,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 4,
+            "x": 4
+          },
+          "element": "Laser",
+          "rotation": 0,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 4,
+            "x": 8
+          },
+          "element": "Detector",
+          "rotation": 180,
+          "frozen": true,
+          "active": false,
+          "energized": true
+        },
+        {
+          "coord": {
+            "y": 6,
+            "x": 6
+          },
+          "element": "Detector",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 2,
+            "x": 10
+          },
+          "element": "Rock",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "coord": {
+          "y": 1,
+          "x": 10
+        },
+        "content": "GOALS: You only need 87.5%",
+        "color": "purple",
+        "rotation": 0,
+        "active": true
+      }
+    ],
+    "goals": [
+      {
+        "coord": {
+          "y": 1,
+          "x": 6
+        },
+        "threshold": 0.25
+      },
+      {
+        "coord": {
+          "y": 6,
+          "x": 6
+        },
+        "threshold": 0.125
+      },
+      {
+        "coord": {
+          "y": 4,
+          "x": 8
+        },
+        "threshold": 0.5
+      }
+    ],
+    "tools": ["BeamSplitter", "BeamSplitter"]
+  },
+
+  {
+    "id": 6,
+    "name": "Introducing interference",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": {
+            "y": 2,
+            "x": 1
+          },
+          "element": "Laser",
+          "rotation": 0,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 2,
+            "x": 3
+          },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 2,
+            "x": 5
+          },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 2,
+            "x": 9
+          },
+          "element": "BeamSplitter",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 2,
+            "x": 11
+          },
+          "element": "Detector",
+          "rotation": 180,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 4,
+            "x": 3
+          },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 4,
+            "x": 5
+          },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 4,
+            "x": 7
+          },
+          "element": "BeamSplitter",
+          "rotation": 225,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 4,
+            "x": 10
+          },
+          "element": "Rock",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": true
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": {
+          "y": 2,
+          "x": 11
+        },
+        "threshold": 1
+      }
+    ],
+    "tools": ["Mirror", "Mirror"],
+    "rockTalkId": "interference"
+  },
+
+  {
+    "id": 7,
+    "name": "Changing interference",
+    "group": "Classic",
+    "description": "Glass slabs doesn't work like v1",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": {
+            "y": 1,
+            "x": 8
+          },
+          "element": "Detector",
+          "rotation": 270,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 4
+          },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 8
+          },
+          "element": "BeamSplitter",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 10
+          },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": true
+        },
+        {
+          "coord": {
+            "y": 6,
+            "x": 1
+          },
+          "element": "Laser",
+          "rotation": 0,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 6,
+            "x": 4
+          },
+          "element": "BeamSplitter",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 6,
+            "x": 8
+          },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [
+      {
+        "coord": {
+          "y": 0,
+          "x": 8
+        },
+        "content": "I am an endangered specie... by a MINE",
+        "color": "purple",
+        "rotation": 0,
+        "active": true
+      }
+    ],
+    "goals": [
+      {
+        "coord": {
+          "y": 1,
+          "x": 8
+        },
+        "threshold": 1
+      }
+    ],
+    "tools": ["Glass", "Glass"],
+    "rockTalkId": "mach-zehnder-interferometer"
+  },
+
+  {
+    "id": 8,
+    "name": "Guiding interference",
+    "group": "Classic",
+    "description": "V1 and V2 sims are different",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 1, "x": 1 },
+          "element": "Laser",
+          "rotation": 0,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 3 },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 5 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 7 },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 9 },
+          "element": "BeamSplitter",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 11 },
+          "element": "Detector",
+          "rotation": 180,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 3 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 5 },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 7 },
+          "element": "BeamSplitter",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 9 },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 3 },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 5 },
+          "element": "BeamSplitter",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 7 },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 9 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 1 },
+          "element": "Detector",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 3 },
+          "element": "BeamSplitter",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 5 },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 7 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 9 },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 7, "x": 1 },
+        "threshold": 0.5
+      },
+      {
+        "coord": { "y": 1, "x": 11 },
+        "threshold": 0.5
+      }
+    ],
+    "tools": ["Glass", "Glass", "Glass"]
+  },
+
+  {
+    "id": 9,
+    "name": "Breaking interference",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": {
+            "y": 1,
+            "x": 2
+          },
+          "element": "Laser",
+          "rotation": 270,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 7
+          },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 2
+          },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 5,
+            "x": 9
+          },
+          "element": "Detector",
+          "rotation": 180,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 5,
+            "x": 7
+          },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 5,
+            "x": 2
+          },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 7,
+            "x": 7
+          },
+          "element": "Detector",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": true
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": {
+          "y": 5,
+          "x": 9
+        },
+        "threshold": 0.25
+      },
+      {
+        "coord": {
+          "y": 7,
+          "x": 7
+        },
+        "threshold": 0.25
+      }
+    ],
+    "tools": ["Rock"]
+  },
+
+  {
+    "id": 10,
+    "name": "Your own Michelson-Morley",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": {
+            "y": 3,
+            "x": 2
+          },
+          "element": "Laser",
+          "rotation": 0,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 7
+          },
+          "element": "BeamSplitter",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 5,
+            "x": 7
+          },
+          "element": "Detector",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": true
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": {
+          "y": 5,
+          "x": 7
+        },
+        "threshold": 1
+      }
+    ],
+    "tools": ["Mirror", "Mirror"]
+  },
+
+  {
+    "id": 11,
+    "name": "Phase matters",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 1, "x": 8 },
+          "element": "Laser",
+          "rotation": 270,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 1 },
+          "element": "Glass",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 3 },
+          "element": "Glass",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 5 },
+          "element": "Glass",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 7 },
+          "element": "Glass",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 8 },
+          "element": "BeamSplitter",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 10 },
+          "element": "Detector",
+          "rotation": 180,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 10 },
+          "element": "Detector",
+          "rotation": 180,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 6, "x": 8 },
+          "element": "Glass",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 3, "x": 10 },
+        "threshold": 1
+      }
+    ],
+    "tools": ["Mirror", "Mirror"]
+  },
+
+  {
+    "id": 12,
+    "name": "Balance Input Amplitudes",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": {
+            "y": 1,
+            "x": 6
+          },
+          "element": "Detector",
+          "rotation": 270,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 1,
+            "x": 8
+          },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": true
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 4
+          },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 10
+          },
+          "element": "DetectorFour",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": true
+        },
+        {
+          "coord": {
+            "y": 5,
+            "x": 6
+          },
+          "element": "Rock",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 5,
+            "x": 10
+          },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 7,
+            "x": 2
+          },
+          "element": "Laser",
+          "rotation": 0,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 7,
+            "x": 4
+          },
+          "element": "BeamSplitter",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 7,
+            "x": 8
+          },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": {
+          "y": 1,
+          "x": 6
+        },
+        "threshold": 0.25
+      },
+      {
+        "coord": {
+          "y": 3,
+          "x": 10
+        },
+        "threshold": 0.75
+      }
+    ],
+    "tools": ["BeamSplitter", "BeamSplitter", "BeamSplitter"]
+  },
+
+  {
+    "id": 13,
+    "name": "Attenuate the beam",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": {
+            "y": 2,
+            "x": 1
+          },
+          "element": "Laser",
+          "rotation": 0,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 2,
+            "x": 10
+          },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": true
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [],
+    "safetyThreshold": 0.01,
+    "tools": ["Absorber", "Absorber", "Absorber", "Absorber", "Absorber", "Absorber", "Absorber"]
+  },
+
+  {
+    "id": 14,
+    "name": "Match intensities",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": {
+            "y": 1,
+            "x": 2
+          },
+          "element": "Laser",
+          "rotation": 0,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 1,
+            "x": 4
+          },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 1,
+            "x": 5
+          },
+          "element": "Glass",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 1,
+            "x": 7
+          },
+          "element": "Glass",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 1,
+            "x": 8
+          },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 4
+          },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 6
+          },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 8
+          },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 10
+          },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": true
+        },
+        {
+          "coord": {
+            "y": 5,
+            "x": 6
+          },
+          "element": "Detector",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": true
+        },
+        {
+          "coord": {
+            "y": 5,
+            "x": 8
+          },
+          "element": "Detector",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": true
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": {
+          "y": 5,
+          "x": 6
+        },
+        "threshold": 0.25
+      },
+      {
+        "coord": {
+          "y": 5,
+          "x": 8
+        },
+        "threshold": 0.5
+      }
+    ],
+    "tools": ["Absorber"]
+  },
+
+  {
+    "id": 15,
+    "name": "Rotating polarization with sugar",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 1, "x": 3 },
+          "element": "Laser",
+          "rotation": 0,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 5 },
+          "element": "SugarSolution",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 6 },
+          "element": "SugarSolution",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 9 },
+          "element": "SugarSolution",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 9 },
+          "element": "SugarSolution",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 6, "x": 2 },
+          "element": "Detector",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 6, "x": 4 },
+          "element": "SugarSolution",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 6, "x": 5 },
+          "element": "SugarSolution",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 6, "x": 7 },
+          "element": "SugarSolution",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 6, "x": 2 },
+        "threshold": 1
+      }
+    ],
+    "tools": ["Mirror", "Mirror"]
+  },
+
+  {
+    "id": 16,
+    "name": "Make it all pass",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 2, "x": 0 },
+          "element": "Laser",
+          "rotation": 0,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": { "y": 2, "x": 3 },
+          "element": "Polarizer",
+          "rotation": 45,
+          "polarization": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 2, "x": 7 },
+          "element": "Polarizer",
+          "rotation": 135,
+          "polarization": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 2, "x": 10 },
+          "element": "Polarizer",
+          "rotation": 0,
+          "polarization": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 3 },
+          "element": "Polarizer",
+          "rotation": 45,
+          "polarization": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 7 },
+          "element": "Polarizer",
+          "rotation": 90,
+          "polarization": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 2, "x": 12 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 0 },
+          "element": "Detector",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 12 },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 4, "x": 0 },
+        "threshold": 1
+      }
+    ],
+    "tools": [
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution"
+    ]
+  },
+
+  {
+    "id": 17,
+    "name": "Apples to apples",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 1, "x": 1 },
+          "element": "Laser",
+          "rotation": 0,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 4 },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 5 },
+          "element": "Polarizer",
+          "rotation": 0,
+          "polarization": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 7 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 4 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 5 },
+          "element": "Polarizer",
+          "rotation": 90,
+          "polarization": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 9 },
+          "element": "Polarizer",
+          "rotation": 0,
+          "polarization": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 11 },
+          "element": "Detector",
+          "rotation": 180,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 6, "x": 7 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 6, "x": 9 },
+          "element": "Polarizer",
+          "rotation": 90,
+          "polarization": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 6, "x": 11 },
+          "element": "Detector",
+          "rotation": 180,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 4, "x": 11 },
+        "threshold": 0.5
+      },
+      {
+        "coord": { "y": 6, "x": 11 },
+        "threshold": 0.5
+      }
+    ],
+    "tools": ["SugarSolution", "SugarSolution", "Mirror"]
+  },
+
+  {
+    "id": 18,
+    "name": "Three polarizers",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 3, "x": 2 },
+          "element": "Laser",
+          "rotation": 0,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 4 },
+          "element": "Polarizer",
+          "rotation": 0,
+          "polarization": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 8 },
+          "element": "Polarizer",
+          "rotation": 90,
+          "polarization": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 10 },
+          "element": "Detector",
+          "rotation": 180,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 3, "x": 10 },
+        "threshold": 0.25
+      }
+    ],
+    "tools": ["Polarizer"]
+  },
+
+  {
+    "id": 19,
+    "name": "Sugar recycling",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 1, "x": 5 },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 6 },
+          "element": "Polarizer",
+          "rotation": 0,
+          "polarization": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 8 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 8 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 9 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 3 },
+          "element": "Laser",
+          "rotation": 0,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 4 },
+          "element": "Polarizer",
+          "rotation": 0,
+          "polarization": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 8 },
+          "element": "Polarizer",
+          "rotation": 90,
+          "polarization": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 9 },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 5 },
+          "element": "Polarizer",
+          "rotation": 0,
+          "polarization": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 9, "x": 5 },
+          "element": "Detector",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 9, "x": 5 },
+        "threshold": 1
+      }
+    ],
+    "tools": ["SugarSolution", "SugarSolution", "SugarSolution", "SugarSolution", "SugarSolution"]
+  },
+
+  {
+    "id": 20,
+    "name": "Polarizing beam splitter",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": {
+            "y": 1,
+            "x": 6
+          },
+          "element": "Laser",
+          "rotation": 0,
+          "polarization": 90,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 1,
+            "x": 11
+          },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 1
+          },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 2
+          },
+          "element": "SugarSolution",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 3
+          },
+          "element": "SugarSolution",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 5
+          },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 6
+          },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 8
+          },
+          "element": "SugarSolution",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 9
+          },
+          "element": "SugarSolution",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 11
+          },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 5,
+            "x": 1
+          },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 5,
+            "x": 4
+          },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 5,
+            "x": 8
+          },
+          "element": "Detector",
+          "rotation": 180,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 7,
+            "x": 2
+          },
+          "element": "Detector",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 7,
+            "x": 4
+          },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 7,
+            "x": 6
+          },
+          "element": "Detector",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 9,
+            "x": 4
+          },
+          "element": "Detector",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": {
+          "y": 5,
+          "x": 8
+        },
+        "threshold": 0.25
+      },
+      {
+        "coord": {
+          "y": 7,
+          "x": 6
+        },
+        "threshold": 0.25
+      },
+      {
+        "coord": {
+          "y": 9,
+          "x": 4
+        },
+        "threshold": 0.25
+      },
+      {
+        "coord": {
+          "y": 7,
+          "x": 2
+        },
+        "threshold": 0.25
+      }
+    ],
+    "tools": [
+      "PolarizingBeamSplitter",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution"
+    ]
+  },
+
+  {
+    "id": 21,
+    "name": "Optical Table Tennis",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 1, "x": 1 },
+          "element": "Laser",
+          "rotation": 0,
+          "polarization": 90,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 4 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 6 },
+          "element": "Polarizer",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 7 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 10 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 1 },
+          "element": "Detector",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 4 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 7 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 10 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 4 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 7 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 10 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 4, "x": 1 },
+        "threshold": 1
+      }
+    ],
+    "tools": [
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution"
+    ]
+  },
+
+  {
+    "id": 22,
+    "name": "Perpendicular are different",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 1, "x": 2 },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 7 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 2 },
+          "element": "Glass",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 0 },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 2 },
+          "element": "BeamSplitter",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 4 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 5 },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 7 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 11 },
+          "element": "Laser",
+          "rotation": 180,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": { "y": 9, "x": 2 },
+          "element": "Detector",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 9, "x": 4 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 9, "x": 5 },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 9, "x": 2 },
+        "threshold": 1
+      }
+    ],
+    "tools": ["SugarSolution", "SugarSolution", "SugarSolution"]
+  },
+
+  {
+    "id": 23,
+    "name": "The minefield of interference",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 1, "x": 1 },
+          "element": "Laser",
+          "rotation": 0,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 2 },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 8 },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 8 },
+          "element": "Detector",
+          "rotation": 180,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 8 },
+          "element": "Detector",
+          "rotation": 180,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 2 },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 4 },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 6 },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 3, "x": 8 },
+        "threshold": 0.5
+      },
+      {
+        "coord": { "y": 5, "x": 8 },
+        "threshold": 0.5
+      }
+    ],
+    "tools": ["BeamSplitter", "BeamSplitter", "BeamSplitter", "BeamSplitter", "Mirror", "Mirror"]
+  },
+
+  {
+    "id": 24,
+    "name": "It can wait",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 1, "x": 5 },
+          "element": "Detector",
+          "rotation": 180,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 2, "x": 7 },
+          "element": "Laser",
+          "rotation": 270,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 5 },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 7 },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 8 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 5 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 1, "x": 5 },
+        "threshold": 0.875
+      }
+    ],
+    "tools": ["Mirror", "Mirror", "Mirror", "Mirror"]
+  },
+
+  {
+    "id": 25,
+    "name": "Sagnac-Michelson-Morley",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 1, "x": 5 },
+          "element": "Mirror",
+          "rotation": 225,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 7 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 5 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 7 },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 9 },
+          "element": "Detector",
+          "rotation": 180,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 9, "x": 7 },
+          "element": "Laser",
+          "rotation": 90,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 5, "x": 9 },
+        "threshold": 1
+      }
+    ],
+    "tools": ["Mirror", "BeamSplitter", "VacuumJar"]
+  },
+
+  {
+    "id": 26,
+    "name": "Sweet madness",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 0, "x": 6 },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 0 },
+          "element": "Detector",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 2 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 3 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 5 },
+          "element": "SugarSolution",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 6 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 9 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 6 },
+          "element": "SugarSolution",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 9 },
+          "element": "SugarSolution",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 2 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 3 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 4 },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 6 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 9 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 180,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 11 },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 2 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 3 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 9 },
+          "element": "Laser",
+          "rotation": 90,
+          "polarization": 90,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 1, "x": 0 },
+        "threshold": 0.75
+      }
+    ],
+    "tools": [
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution"
+    ]
+  },
+
+  {
+    "id": 27,
+    "name": "Interfrenzy",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 1, "x": 0 },
+          "element": "Laser",
+          "rotation": 0,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 2 },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 7 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 9 },
+          "element": "Mirror",
+          "rotation": 315,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 2 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 11 },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 9, "x": 7 },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 9, "x": 9 },
+          "element": "Detector",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 9, "x": 9 },
+        "threshold": 1
+      }
+    ],
+    "tools": ["BeamSplitter", "BeamSplitter", "BeamSplitter", "BeamSplitter", "BeamSplitter"]
+  },
+
+  {
+    "id": 28,
+    "name": "Faraday and mirrors",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 1, "x": 6 },
+          "element": "Detector",
+          "rotation": 270,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 2 },
+          "element": "Laser",
+          "rotation": 0,
+          "polarization": 90,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 3 },
+          "element": "SugarSolution",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 4 },
+          "element": "SugarSolution",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 6 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 180,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 9 },
+          "element": "Mirror",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 1, "x": 6 },
+        "threshold": 1
+      }
+    ],
+    "tools": ["FaradayRotator", "FaradayRotator", "Mirror"]
+  },
+
+  {
+    "id": 29,
+    "name": "You shouldnt look back",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 2, "x": 3 },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 1 },
+          "element": "Laser",
+          "rotation": 0,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 3 },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 9 },
+          "element": "BeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 11 },
+          "element": "Detector",
+          "rotation": 180,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 3 },
+          "element": "Rock",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 3, "x": 11 },
+        "threshold": 0.25
+      }
+    ],
+    "tools": ["FaradayRotator", "Polarizer"]
+  },
+
+  {
+    "id": 30,
+    "name": "Sagnac twist",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 1, "x": 4 },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 6 },
+          "element": "Detector",
+          "rotation": 270,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 1 },
+          "element": "Laser",
+          "polarization": 90,
+          "rotation": 0,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 4 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 5 },
+          "element": "SugarSolution",
+          "rotation": 0,
+          "frozen": false,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 6 },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 9 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 6, "x": 4 },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 6, "x": 6 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 6, "x": 9 },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 1, "x": 6 },
+        "threshold": 1
+      }
+    ],
+    "tools": ["FaradayRotator", "FaradayRotator", "SugarSolution", "SugarSolution"]
+  },
+
+  {
+    "id": 31,
+    "name": "Nine polarizing beam splitters",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": {
+            "y": 1,
+            "x": 1
+          },
+          "element": "Laser",
+          "rotation": 0,
+          "polarization": 90,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 1,
+            "x": 4
+          },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 1,
+            "x": 6
+          },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 1,
+            "x": 8
+          },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 4
+          },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 6
+          },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 3,
+            "x": 8
+          },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 5,
+            "x": 4
+          },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 5,
+            "x": 6
+          },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 5,
+            "x": 8
+          },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": {
+            "y": 5,
+            "x": 10
+          },
+          "element": "Detector",
+          "rotation": 180,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": {
+          "y": 5,
+          "x": 10
+        },
+        "threshold": 1
+      }
+    ],
+    "tools": ["FaradayRotator", "FaradayRotator", "Mirror", "Mirror"]
+  },
+
+  {
+    "id": 32,
+    "name": "One-way mirror",
+    "group": "Classic",
+    "description": "Wrong right beamsplitter",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 1, "x": 1 },
+          "element": "Laser",
+          "polarization": 0,
+          "rotation": 270,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": { "y": 2, "x": 2 },
+          "element": "Mirror",
+          "rotation": 225,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 2, "x": 9 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 1 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 2 },
+          "element": "BeamSplitter",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 3 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 9 },
+          "element": "BeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 6, "x": 3 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 6, "x": 9 },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 8, "x": 5 },
+          "element": "Detector",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 8, "x": 5 },
+        "threshold": 1
+      }
+    ],
+    "tools": ["SugarSolution", "PolarizingBeamSplitter", "FaradayRotator"]
+  },
+
+  {
+    "id": 33,
+    "name": "Sweet Faraday",
+    "group": "Classic",
+    "description": "Inverted Faraday rotation from classic",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 1, "x": 1 },
+          "element": "Detector",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 4 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 7 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 10 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 1 },
+          "element": "Laser",
+          "rotation": 0,
+          "polarization": 90,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 4 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 6 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 9 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 11 },
+          "element": "Mirror",
+          "rotation": 270,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 1 },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 4 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 7 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 9 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 11 },
+          "element": "Mirror",
+          "rotation": 270,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 1 },
+          "element": "Mirror",
+          "rotation": 270,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 4 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 6 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 7 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 10 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 1, "x": 1 },
+        "threshold": 1
+      }
+    ],
+    "tools": [
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "SugarSolution",
+      "FaradayRotator",
+      "FaradayRotator",
+      "FaradayRotator",
+      "FaradayRotator",
+      "FaradayRotator"
+    ]
+  },
+
+  {
+    "id": 34,
+    "name": "Cascade switches",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 1, "x": 7 },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 9 },
+          "element": "BeamSplitter",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 11 },
+          "element": "Laser",
+          "rotation": 180,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 5 },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 7 },
+          "element": "BeamSplitter",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 9 },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 3 },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 5 },
+          "element": "BeamSplitter",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 7 },
+          "element": "Mirror",
+          "rotation": 45,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 5 },
+          "element": "Detector",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 7, "x": 5 },
+        "threshold": 1
+      }
+    ],
+    "tools": ["Glass", "Glass"]
+  },
+
+  {
+    "id": 35,
+    "name": "Interfering polarization",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 1, "x": 0 },
+          "element": "Laser",
+          "rotation": 0,
+          "polarization": 90,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": { "y": 1, "x": 7 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 3 },
+          "element": "Mirror",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 7 },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 9 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 4, "x": 11 },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 6, "x": 5 },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 6, "x": 7 },
+          "element": "PolarizingBeamSplitter",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 6, "x": 9 },
+          "element": "Detector",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 8, "x": 7 },
+          "element": "Detector",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 8, "x": 7 },
+        "threshold": 0.5
+      },
+      {
+        "coord": { "y": 6, "x": 9 },
+        "threshold": 0.5
+      }
+    ],
+    "tools": ["SugarSolution", "SugarSolution", "BeamSplitter"]
+  },
+
+  {
+    "id": 36,
+    "name": "A bit of a lot",
+    "group": "Classic",
+    "description": "",
+    "grid": {
+      "cols": 13,
+      "rows": 10,
+      "cells": [
+        {
+          "coord": { "y": 3, "x": 2 },
+          "element": "Laser",
+          "rotation": 0,
+          "polarization": 90,
+          "frozen": true,
+          "active": true,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 4 },
+          "element": "Polarizer",
+          "rotation": 135,
+          "polarization": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 5 },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 3, "x": 10 },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 6 },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 8 },
+          "element": "BeamSplitter",
+          "rotation": 135,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 5, "x": 10 },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 6, "x": 5 },
+          "element": "Rock",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 7, "x": 4 },
+          "element": "Detector",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 8, "x": 6 },
+          "element": "Mine",
+          "rotation": 0,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        },
+        {
+          "coord": { "y": 8, "x": 8 },
+          "element": "Detector",
+          "rotation": 90,
+          "frozen": true,
+          "active": false,
+          "energized": false
+        }
+      ]
+    },
+    "hints": [],
+    "goals": [
+      {
+        "coord": { "y": 8, "x": 8 },
+        "threshold": 0.5
+      },
+      {
+        "coord": { "y": 7, "x": 4 },
+        "threshold": 0.25
+      }
+    ],
+    "tools": [
+      "Absorber",
+      "SugarSolution",
+      "Mirror",
+      "Mirror",
+      "Glass",
+      "FaradayRotator",
+      "VacuumJar",
+      "PolarizingBeamSplitter"
+    ],
+    "rockTalkId": "twitter"
+  }
+]

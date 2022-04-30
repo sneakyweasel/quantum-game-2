@@ -1,10 +1,20 @@
-import Vue from 'vue';
-import Vuex, { StoreOptions } from 'vuex';
-import { RootState } from '../types';
+import { createStore } from 'vuex'
 
-Vue.use(Vuex);
+import optionsModule from './optionsModule'
+import userModule from './userStore'
+import { IRootState, strongStoreOptions } from './storeInterfaces'
+import gameModule from './gameModule'
+import errorsModule from './errorsModule'
 
-// TODO: Clean-up, figure out initial state structure.
-const store: StoreOptions<RootState> = {};
+const storeOptions = strongStoreOptions({
+  modules: {
+    options: optionsModule,
+    user: userModule,
+    game: gameModule,
+    errors: errorsModule,
+  },
+})
 
-export default new Vuex.Store<RootState>(store);
+export type StoreModules = typeof storeOptions['modules']
+
+export const store = createStore<IRootState>(storeOptions)

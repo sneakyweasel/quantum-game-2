@@ -1,107 +1,50 @@
-# quantum-game-2
-Quantum Game 2 from CQT
+# Quantum Game 2
 
-## develop
-`yarn` followed by `yarn serve`
+A puzzle game with photons, superposition and quantum measurement, right in your browser. With true quantum mechanics underneath!
 
-## TODO:
+![GitHub package.json version](https://img.shields.io/github/package-json/v/Quantum-Game/quantum-game-2)
+![License](https://img.shields.io/github/license/Quantum-Game/quantum-game-2)
+[![Build Status](https://travis-ci.com/Quantum-Game/quantum-game-2.svg?branch=master)](https://travis-ci.com/Quantum-Game/quantum-game-2)
+[![Twitter @QuantumGameIO](https://img.shields.io/twitter/follow/QuantumGameIO)](https://twitter.com/quantumgameio)
 
-### GAME:
-- [ ] Defeat Overlay
+Follow updates on Twitter [@QuantumGameIO](https://twitter.com/QuantumGameIO), [Faceboook](https://www.facebook.com/quantumgameio/) and read our blog posts on [Medium](https://medium.com/quantum-photons).
 
-### TOOLBOX
+Quantum Game is currently being developed by dr [Piotr Migdał](https://p.migdal.pl/), [Klem Jankiewicz](http://jankiewiczstudio.com/), [Paweł Grabarz](https://github.com/frizi) and [Philippe Cochin](https://github.com/sneakyweasel). Concept art by [Chiara Decaroli](https://maperseguirvirtute.wordpress.com/) and generative music by [Pawel Janicki](https://www.paweljanicki.jp/) and others. [The full list of contributors](https://github.com/Quantum-Game/quantum-game-2/graphs/contributors).
 
-### GOALS METER
-- [ ] our own implementation
+This version of the game was funded by the [Center for Quantum Technologies of the National University of Singapore](https://www.quantumlah.org/) and now being developed by the **Quantum Flytrap**.
 
-### EXPLANATION
-- [ ] set up Exmplanation prop
+![Quantum Game 2 logo](public/img/qg2_logo.png)
 
-### LEVELS VIEW
+The current version uses subcomponents:
 
-### Grid
+* [Quantum Tensors](https://github.com/Quantum-Game/quantum-tensors) - a JavaScript / TypeScript package for sparse tensor operations on complex numbers. It is an NPM package we created for this game, but made it in a way it is reusable.
+* [bra-ket-vue](https://github.com/Quantum-Game/bra-ket-vue) - quantum state and operator visualizer, in Vue.js.
+* [Quantum Encyclopedia](https://github.com/Quantum-Game/qg-encyclopedia) - encyclopedia of elements and concepts in quantum physics.
 
-### YOUR PHOTON(S)
-- [ ] Style it so it fits in
+You can play the old version (2014-2016) [here](http://play.quantumgame.io/); its source is at [stared/quantum-game](https://github.com/stared/quantum-game).
 
-### ENCYCLOPEDIAs
-- [ ] add inline styling for images
-- [ ] add aria attributes for folded panes
+[![Centre for Quantum Technologies - National University of Singapore](https://img.shields.io/badge/Supported%20By-CQT,%20National%20University%20of%20Singapore-brightgreen.svg?style=for-the-badge)](https://www.quantumlah.org/)
 
-### MAINTENANCE
+## Installation
 
-### BUGS
-- [ ] entry seciton scrollHeight bug, where the open entry section max height is ill-calculated, resulting in the text not fitting in. Might be correlated to flex / screen width;
+You need to have [yarn](https://yarnpkg.com/) installed. Then, after cloning install dependencies with:
 
+```bash
+yarn
+```
 
-14.10:
-- [x] Scaffold menu
-- [x] Include Menu button into the layout
-- [x] serve images in entries
-- [x] make the isOpen in entry section be prop-derived
+And run it with:
 
-15.10
-- [x] review push
-- [x] get the menu icon into the foreground
-- [x] make the q-menu listen to enc key press
-- [x] menu enter/leave animation
-- [x] make the entry sections titles uppercase
-- [x] create turning arrows indicating folded panes
-- [x] qMenu items are offsetted right with width of the icon
-- [x] adjustments by from Klem I
+```bash
+yarn serve
+```
 
-16.10
-- [x] Host in on Firebase
-- [x] Have as dependency https://github.com/sneakyweasel/quantumweasel;
-- [x] type levelData
+![In-game screenshot from Quantum Game 2](public/img/qg2_social_media_screenshot.png)
 
-17.10
-- [x] displaying frames
-- [x] propertly order frames without overwriting the last one (thanks lodash deep clone! :*);
-- [x] Create a working GameContainer - meanning initializing the Game object
-- [x] Simplify Cells as per https://github.com/sneakyweasel/QuantumDisplay
-- [x] Adjust the board
-- [x] display elements graphix;
-- [x] have the simulation going
+## Contribution
 
-18.10
-- [x] enhance q-button with inline,
-- [x] enhance simulator viewer with internal viewing control
-- [x] create layout for Game
-- [x] Turn simulation into Your Photon section;
-- [x] move components into game directory
-- [x] create a component placeholder for goals;
-- [x] create a component placeholder for controls
-- [x] create a component placeholder for tools
-- [x] get rid of conflicting prettier configs, editorconfig
-- [x] scope styles across the app
+It as an open-source project and we appreciate contributions.
 
+## Issues
 
-21.10
-- [x] Level Changing Buttons on top (for devving)
-- [x] clean up
-- [x] RESETTING FUNCTION
-- [x] implement the donut
-- [x] set up Goals props
-- [x] General CntrlBtn Component
-- [x] set up variants
-- [x] start adding handlers
-- [x] prepare tray
-
-22.10
-- [x] board as background
-- [x] enhance entries structure
-- [x] Victory overlay
-- [x] donut chart
-
-23.10
-- [x] refine elements
-- [x] set up Controls props
-- [x] elements' border / roatation
-- [x] laser path
-- [x] ERROR in /home/kuba/Desktop/190913QUANTUM/quantum-game-2/src/views/GameContainer.vue 32:23 Could not find a declaration file for module '../game/levels'. '/home/kuba/Desktop/190913QUANTUM/quantum-game-2/src/game/levels/index.js' implicitly has an 'any' type.
-
-24.10
-- [x] fix cell in tray so it displays elements
-- [x] move cells on top of lasers
-
+Please report all errors using [Issues](https://github.com/Quantum-Game/quantum-game-2/issues). Please be explicit what is wrong, and what is the desired behavior. Screenshots do help a lot.

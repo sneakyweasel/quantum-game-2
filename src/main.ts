@@ -1,17 +1,21 @@
-import Vue from 'vue';
-import Donut from 'vue-css-donut-chart';
-import App from './App.vue';
-import router from './router';
-import store from './store/store';
-import './registerServiceWorker';
-import 'vue-css-donut-chart/dist/vcdonut.css';
+// required for vue-property-decorator
+import { createApp } from 'vue'
+import router from './router'
+import { store } from './store/store'
+import './registerServiceWorker'
+import { i18n } from './i18n'
+import { flagsPlugin } from './flags'
+import App from './App.vue'
 
-Vue.use(Donut);
+import 'bra-ket-vue/dist/bra-ket-vue.css'
 
-Vue.config.productionTip = false;
-
-new Vue({
-	router,
-	store,
-	render: (h) => h(App)
-}).$mount('#app');
+createApp(App)
+  .use(router)
+  // FIXME: vue3 support soon: https://github.com/MatteoGabriele/vue-gtag/issues/168#issuecomment-684498923
+  // .use(VueGtag, {
+  //   config: { id: 'UA-56225776-1' },
+  // })
+  .use(i18n)
+  .use(store)
+  .use(flagsPlugin)
+  .mount('#app')

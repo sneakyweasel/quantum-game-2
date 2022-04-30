@@ -1,9 +1,15 @@
+declare module '*.svg?inline' {
+  import { defineComponent } from 'vue'
+  const component: ReturnType<typeof defineComponent>
+  export default component
+}
+
 declare module '*.svg' {
-	import { VNode } from 'vue';
+  const path: string
+  export default path
+}
 
-	// DON'T DECLARE THIS INSIDE GLOBAL MODULE
-	type Svg = VNode;
-
-	const content: Svg;
-	export default content;
+declare module '*.jpg' {
+  const path: string
+  export default path
 }

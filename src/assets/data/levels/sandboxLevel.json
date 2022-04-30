@@ -1,0 +1,40 @@
+{
+  "id": 0,
+  "name": "Virtual Lab",
+  "group": "Sandbox",
+  "description": "",
+  "grid": {
+    "cols": 13,
+    "rows": 10,
+    "cells": [
+      {
+        "coord": { "y": 3, "x": 1 },
+        "element": "Laser",
+        "rotation": 0,
+        "frozen": false,
+        "active": true
+      }
+    ]
+  },
+  "hints": [],
+  "goals": [],
+  "tools": [
+    "Mirror",
+    "BeamSplitter",
+    "PolarizingBeamSplitter",
+    "CornerCube",
+    "Detector",
+    "Rock",
+    "Mine",
+    "Absorber",
+    "DetectorFour",
+    "Polarizer",
+    "QuarterWavePlate",
+    "HalfWavePlate",
+    "SugarSolution",
+    "FaradayRotator",
+    "Glass",
+    "VacuumJar"
+  ],
+  "toolsInfinite": true
+}
